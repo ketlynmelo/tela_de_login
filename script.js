@@ -6,30 +6,37 @@ form.addEventListener('submit', function (e) {
 
     e.preventDefault();
 
+    let valido = true;
 
-        let valido = true;
+    let usuario = document.getElementById('usuario').value;
+    let senha = document.getElementById('senha').value;
 
-        let nome = document.getElementById('nome').value;
-        let senha = document.getElementById('senha').value;
-        const feedback = document.getElementById('invalid-feedback');
 
-       
-        i f (nomeInput.value.trim() === '') {
-         feedback.textContent = 'O nome é obrigatório!';
-        } else {
-         feedback.textContent = ''
-        alert('Formulário enviado com sucesso!');
+    if (usuario.trim() === '') { //Verificar se está vazio//
+        feedback.textContent = 'O nome é obrigatório!';
+    } else {
+        feedback.textContent = '' //Enviar o formulario//
 
         document.getElementById('invalid-feedback').textContent = '';
 
-    if (!nome.includes(" ")) {
+        if (!usuario.includes(" ")) {
 
-        document.getElementById('erroNome').textContent = 'Nome inválido,deve conter o nome completo';
-        valido = false;
-    }
+            document.getElementById('invalid-feedback').textContent = 'Usuário inválido';
+            valido = false;
+        }
+
+        if (senha === '4321') {
+
+
+        } else {
+            alert("Senha incorreta!");
+            valido = false;
+        }
+
+
 
 
         form.reset();
-    
 
-})
+
+    })
