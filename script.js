@@ -11,32 +11,44 @@ form.addEventListener('submit', function (e) {
     let usuario = document.getElementById('usuario').value;
     let senha = document.getElementById('senha').value;
 
+    if (usuario.trim() === '') {   //campo vazio
+        alert("Campo de usuário vazio!");
+        valido = false;
+    }
 
-    if (usuario.trim() === '') { //Verificar se está vazio//
-        feedback.textContent = 'O nome é obrigatório!';
+    if (usuario.trim() === 'Marquinhos04') { //Verificar o nome//
+
     } else {
-        feedback.textContent = '' //Enviar o formulario//
+        alert("Usuário incorreto!"); //aviso//
+        valido = false;
+    }
 
-        document.getElementById('invalid-feedback').textContent = '';
+    if (senha.trim() === '') {
+        alert("Campo de senha vazio!!")
+        valido = false;
+    }
 
-        if (!usuario.includes(" ")) {
-
-            document.getElementById('invalid-feedback').textContent = 'Usuário inválido';
-            valido = false;
-        }
-
-        if (senha === '4321') {
-
-
-        } else {
-            alert("Senha incorreta!");
-            valido = false;
-        }
+    if (senha.trim() === '4321') { //verificar se a senha é a correta//
 
 
+    } else {
+        alert("Senha incorreta!"); //aviso//
+        valido = false;
+    }
 
+    if (valido) {
+
+
+        let usuarioObj = {
+            usuario: usuario,
+            senha: senha
+        };
+
+        dados.push(usuarioObj);
+        console.table(dados);
+        alert('Formulário enviado com sucesso!');
 
         form.reset();
+    }
 
-
-    })
+})
