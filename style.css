@@ -1,8 +1,15 @@
+#telainicial{
+    border-radius: 10px !important;
+    height: 50px !important;
+    font-size: 15px ;
+    padding: 10px;
+    background-color: rgba(255, 233, 199, 0.719) !important;
+    border:0px !important;
+}
 body{
     background-image: url(assets/image/fundo.png);
     background-repeat: no-repeat;
     background-size: 100%;
-     background: linear-gradient(to right, #1c1c1c, #3a3a3a);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #imagem{
@@ -22,18 +29,6 @@ button{
      border:0px !important;
      margin-top: 10px !important;
 }
-<<<<<<< HEAD
-.navbar{
-    border-radius: 10px !important;
-    height: 50px !important;
-    font-size: 15px ;
-    padding: 10px;
-    background-color: rgba(255, 233, 199, 0.719) !important;
-    border:0px !important;
-
-}
-=======
-
 h1, h2 {
     letter-spacing: 1px;
 }
@@ -59,4 +54,4 @@ h1, h2 {
     max-height: 400px; 
     object-fit: cover;   
 }
->>>>>>> 42923b3cf617a35bb223037e9625025d28c64dbf
+
