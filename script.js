@@ -47,7 +47,7 @@ form.addEventListener('submit', function (e) {
         dados.push(usuarioObj);
         console.table(dados);
         alert('Formulário enviado com sucesso!');
-        window.location.href = "home_historia.html";
+        window.location.href = "inicial.html";
 
         form.reset();
     }
