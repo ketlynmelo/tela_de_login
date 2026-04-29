@@ -1,0 +1,22 @@
+body{
+    background-image: url(assets/image/fundo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#imagem{
+    margin-left: 500px;
+    padding-top: 50px;
+
+}
+#colorir{
+    background-color: rgba(26, 31, 1, 0.753) !important;
+    color: white !important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border:0px !important;
+
+}
+button{
+    background-color: rgba(255, 233, 199, 0.719) !important;
+     border:0px !important;
+     margin-top: 10px !important;
+}
