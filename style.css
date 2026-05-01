@@ -3,20 +3,23 @@
     height: 50px !important;
     font-size: 15px ;
     padding: 10px;
-    background-color: rgba(255, 233, 199, 0.719) !important;
+    background-color: rgba(255, 212, 199, 0.719) !important;
     border:0px !important;
+   
 }
-body{
-    background-image: url(assets/image/fundo.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+    background: url("assets/image/fundo.png") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+
 }
 #imagem{
     margin-left: 500px;
     padding-top: 50px;
+    
 
 }
+
 #colorir{
     background-color: rgba(26, 31, 1, 0.753) !important;
     color: white !important;
@@ -24,6 +27,24 @@ body{
     border:0px !important;
 
 }
+.historia {
+    margin-top: 10px;
+    color: #e0d3b8;
+    font-family: Georgia, serif;
+    display: ;
+}
+
+#colorir2{
+    background-color: rgba(0, 0, 0, 0.918) !important;
+    color: white !important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border:0px !important;
+    backdrop-filter: blur(6px) !important;
+    gap: 20px;
+    margin: 50px;
+    padding: 20px;
+}
+
 button{
     background-color: rgba(255, 233, 199, 0.719) !important;
      border:0px !important;
@@ -53,4 +74,25 @@ h1, h2 {
 .card img {
     max-height: 400px; 
     object-fit: cover;   
+}
+.navbar {
+    background: rgba(20, 20, 20, 0.8) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+.navbar a:hover {
+    color: #ffcc70 !important;
+    transition: 0.3s;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.jogo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
 }
